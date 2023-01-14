@@ -1,4 +1,14 @@
-const palindromes = function (string) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const palindromes = function (string) {
     let cleanString = ''
     // label:checkChar
     for (const character of string) {
@@ -16,13 +26,17 @@ const palindromes = function (string) {
         }else if(text[0] == text[text.length-1]){
             return true && isPalindrom(text.substring(1,text.length-1))
         }else{
+            console.log(text[0]);
+            console.log(text[1]);
+            console.log(text[0]==text[text.length-1]);
+            
             return false
         }
     }
     
     return isPalindrom(cleanString)
 
-};
-
-// Do not edit below this line
-module.exports = palindromes;
+}
+    </script>
+</body>
+</html>
