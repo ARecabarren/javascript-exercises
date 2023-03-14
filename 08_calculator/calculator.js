@@ -55,17 +55,24 @@ const sum = function(myArray) {
 };
 
 const multiply = function(myArray) {
-  return myArray.reduce((total,numb)=>{
-    return total * numb
-  },1)
+  if (myArray.length) {
+    return myArray.reduce((accumulator,nextItem) => {
+      return accumulator * nextItem
+    })
+  }
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+	return Math.pow(a,b)
 };
 
-const factorial = function() {
-	
+const factorial = function(chiffre) {
+	myArray = [];
+  if(chiffre === 0) return 1;
+  for (let index = 1; index <= chiffre; index++) {
+    myArray[myArray.length] = index
+    
+  } return multiply(myArray)
 };
 
 // Do not edit below this line
